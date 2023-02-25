@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Image Grid</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="gallery">
+      <div>
+        <img src="images/1.jpg" alt="image 1">
+      </div>
+
+      <div class="v-stretch">
+        <img src="images/2.jpg" alt="image 2">
+      </div>
+
+      <div class="h-stretch">
+        <img src="images/3.jpg" alt="image 3">
+      </div>
+
+      <div class="v-stretch">
+        <img src="images/4.jpg" alt="image 4">
+      </div>
+
+      <div>
+        <img src="images/5.jpg" alt="image 5">
+      </div>
+
+      <div class="v-stretch">
+        <img src="images/6.jpg" alt="image 6">
+      </div>
+
+      <div class="big-stretch">
+        <img src="images/7.jpg" alt="image 7">
+      </div>
+
+      <div>
+        <img src="images/8.jpg" alt="image 8">
+      </div>
+
+      <div class="h-stretch">
+        <img src="images/9.jpg" alt="image 9">
+      </div>
+
+      <div class="v-stretch">
+        <img src="images/10.jpg" alt="image 10">
+      </div>
+
+      <div>
+        <img src="images/11.jpg" alt="image 11">
+      </div>
+
+      <div>
+        <img src="images/12.jpg" alt="image 12">
+      </div>
+
+      <div class="v-stretch">
+        <img src="images/13.jpg" alt="image 13">
+      </div>
+
+      <div>
+        <img src="images/14.jpg" alt="image 14">
+      </div>
+
+      <div class="big-stretch">
+        <img src="images/15.jpg" alt="image 15">
+      </div>
+
+      <div>
+        <img src="images/16.jpg" alt="image 16">
+      </div>
+
+      <div class="h-stretch">
+        <img src="images/17.jpg" alt="image 17">
+      </div>
+
+      <div>
+        <img src="images/18.jpg" alt="image 18">
+      </div>
+
+      <div class="big-stretch">
+        <img src="images/19.jpg" alt="image 19">
+      </div>
+
+      <div>
+        <img src="images/20.jpg" alt="image 20">
+      </div>
+
+      <div>
+        <img src="images/21.jpg" alt="image 21">
+      </div>
+
+      <div class="h-stretch">
+        <img src="images/22.jpg" alt="image 22">
+      </div>
+
+      <div>
+        <img src="images/23.jpg" alt="image 23">
+      </div>
+    </div>
+    
+    <div class="overlay" style="display: none">
+      <img src="#" alt="Selected image">
+      <a href="#" class="close-button">X</a>
+    </div>
+    <script>
+      const images = document.querySelectorAll('.gallery img');
+      const overlay = document.querySelector('.overlay');
+      const overlayImage = document.querySelector('.overlay img');
+      const closeButton = document.querySelector('.close-button');
+
+      images.forEach(image => {
+        image.addEventListener('click', () => {
+        overlay.style.display = 'block';
+        overlayImage.src = image.src;
+        });
+      });
+
+      closeButton.addEventListener('click', () => {
+      overlay.style.display = 'none';
+      });
+    </script>
+  </body>
+</html>

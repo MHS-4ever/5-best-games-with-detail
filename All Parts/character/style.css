@@ -1,0 +1,47 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.product-small-img{
+  padding-top: 50px;
+  padding: 8px 0;
+  float: left;
+}
+.product-small-img img{
+  height: 80px;
+  margin: 20px 0;
+  cursor: pointer;
+  display: block;
+  opacity: 1;
+}
+.product-small-img{
+  float: left;
+}
+.page-2{
+  padding-left: 100px;
+  position: absolute;
+  height: 100vh;
+}
+.img-container img{
+  height: 500px;
+  margin-top: 50PX;
+  margin-left: 50px;
+}
+.img-container{
+  float: right;
+}
+.image-overlay{
+  opacity: 0.3;
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+.image-overlay .title {
+  margin-top: -60px;
+  margin-left: 40px;
+}
+p{
+  margin-left: 40px;
+}
+.image-overlay:hover{
+  opacity: 1;
+}

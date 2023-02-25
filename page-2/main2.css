@@ -1,0 +1,445 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: space-between ;
+    background: lightslategrey;
+    min-height: 100vh;
+}
+.main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style: preserve-3d;
+}
+.container .box{
+    position: relative;
+    height: 400px;
+    width: 300px;
+    margin: 40px;
+    background: #232323;
+    border-radius: 20px;
+    transform-style: preserve-3d; 
+}
+.box img {
+    height: 200px;
+    width: 200px;
+    transform: scale(2);
+    margin-top: 50px;
+    margin-left: -25px;
+}
+.container .box .visit{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    background: #000;
+    padding: 20px 65px;
+    border-radius: 30px;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+    text-decoration: none;
+}
+.container .box:hover .visit{
+    bottom: 100px;
+    opacity: 1;
+    color: azure;
+    font-size: x-large;
+}
+.container .box::before{
+    content: "MAX PAYNE 3";
+    position: absolute;
+    text-align: center;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    top: 80px;
+    left: 20px;
+    font-size: 65px;
+    font-weight: 900;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .box:hover::before,
+.container .box:hover::after{
+    opacity:  0.7;
+    color: cyan;
+    z-index: 10;
+}
+.container .box .name{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+.container .box:hover .name{
+    top: 10px;
+    opacity: 1;
+    color: brown;
+} 
+.container .box:hover .name{
+    bottom: 30px;
+    opacity: 1;
+} 
+.container .box .game{
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    max-width: 150px;
+    transition: 0.5s;
+    z-index: 11;
+    transform-style: preserve-3d;
+}
+.container .box1{
+    position: relative;
+    height: 400px;
+    width: 300px;
+    margin: 40px;
+    background: #232323;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+.container .box1 .visit{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    background: #000;
+    padding: 20px 65px;
+    border-radius: 30px;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+    text-decoration: none;
+}
+.container .box1:hover .visit{
+    bottom: 130px;
+    opacity: 1;
+    color: azure;
+    font-size: x-large;
+}
+.container .box1::before{
+    content: "VALORANT";
+    position: absolute;
+    text-align: center;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    top: 80px;
+    left: -30px;
+    font-size: 65px;
+    font-weight: 900;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .box1:hover::before,
+.container .box1:hover::after{
+    opacity:  0.7;
+    color: cyan;
+    z-index: 10;
+}
+.container .box1 .name{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+.container .box1:hover .name{
+    top: 10px;
+    opacity: 1;
+    color: brown;
+} 
+.container .box1:hover .name{
+    bottom: 30px;
+    opacity: 1;
+} 
+.container .box1 .game1{
+    position: absolute;
+    top: 49px;
+    left: 60px;
+    max-width: 180px;
+    transition: 0.5s;
+    z-index: 11;
+    transform-style: preserve-3d;
+}
+.container .box2{
+    position: relative;
+    height: 400px;
+    width: 300px;
+    margin: 40px;
+    background: #232323;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+.box2 img {
+    height: 400px;
+    margin-top: -50px;
+    margin-left: -15px;
+}
+.container .box2 .visit{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    background: #000;
+    padding: 20px 65px;
+    border-radius: 30px;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+    text-decoration: none;
+}
+.container .box2:hover .visit{
+    bottom: 100px;
+    opacity: 1;
+    color: azure;
+    font-size: x-large;
+}
+.container .box2::before{
+    content: "PUBG";
+    position: absolute;
+    text-align: center;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    top: 150px;
+    left: 60px;
+    font-size: 65px;
+    font-weight: 900;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .box2:hover::before,
+.container .box2:hover::after{
+    opacity:  0.7;
+    color: cyan;
+    z-index: 10;
+}
+.container .box2 .name{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+.container .box2:hover .name{
+    top: 10px;
+    opacity: 1;
+    color: brown;
+} 
+.container .box2:hover .name{
+    bottom: 30px;
+    opacity: 1;
+} 
+.container .box2 .game2{
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    max-width: 150px;
+    transition: 0.5s;
+    z-index: 11;
+    transform-style: preserve-3d;
+}
+.container .box3{
+    position: relative;
+    height: 400px;
+    width: 300px;
+    margin: 40px;
+    background: #232323;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+    
+}
+.container .box3 .visit{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    background: #000;
+    padding: 20px 65px;
+    border-radius: 30px;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+    text-decoration: none;
+}
+.container .box3:hover .visit{
+    bottom: 100px;
+    opacity: 1;
+    color: azure;
+    font-size: x-large;
+}
+.container .box3::before{
+    content: "APEX LEGEND";
+    position: absolute;
+    text-align: center;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    top: 80px;
+    left: 20px;
+    font-size: 65px;
+    font-weight: 900;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .box3:hover::before,
+.container .box3:hover::after{
+    opacity:  0.7;
+    color: cyan;
+    z-index: 10;
+}
+.container .box3 .name{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+.container .box3:hover .name{
+    top: 10px;
+    opacity: 1;
+    color: brown;
+} 
+.container .box3:hover .name{
+    bottom: 30px;
+    opacity: 1;
+} 
+.container .box3 .game3{
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    max-width: 162px;
+    transition: 0.5s;
+    z-index: 11;
+    transform-style: preserve-3d;
+}
+.container .box4{
+    position: relative;
+    height: 400px;
+    width: 300px;
+    margin: 40px;
+    background: #232323;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+    
+}
+.box4 img {
+    transform: scale(1.2);
+}
+.container .box4 .visit{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    background: #000;
+    padding: 20px 65px;
+    border-radius: 30px;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+    text-decoration: none;
+}
+.container .box4:hover .visit{
+    bottom: 100px;
+    opacity: 1;
+    color: azure;
+    font-size: x-large;
+}
+.container .box4::before{
+    content: "FREE FIRE";
+    position: absolute;
+    text-align: center;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    top: 80px;
+    left: -15px;
+    font-size: 65px;
+    font-weight: 900;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .box4:hover::before,
+.container .box4:hover::after{
+    opacity:  0.7;
+    color: cyan;
+    z-index: 10;
+}
+.container .box4 .name{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+.container .box4:hover .name{
+    top: 10px;
+    opacity: 1;
+    color: brown;
+} 
+.container .box4:hover .name{
+    bottom: 30px;
+    opacity: 1;
+} 
+.container .box4 .game4{
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    max-width: 250px;
+    transition: 0.5s;
+    z-index: 11;
+    transform-style: preserve-3d;
+}

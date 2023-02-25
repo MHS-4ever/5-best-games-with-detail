@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-2" id="page-2">
+    <div class="product-small-img">
+        <div class="breech">
+            <div class="image-overlay">
+                <img src="images/max payne.png" onclick="myFunction(this)">
+                <div class="title">Max Payne</div>
+                <P class="txt">The main protagonist of the game, a former detective who has become vigilante after the death of his wife and child.</P>
+            </div>
+        </div>
+        <div class="brimstone">
+            <div class="image-overlay">
+                <img src="images/passo.png" onclick="myFunction(this)">
+                <div class="title">Raul Passos</div>
+                <P class="txt">A former member of Brazilian police force who teams up with Max to take down the Comando Sombra gang.</P>
+            </div>
+        </div>
+        <div class="astra">            
+            <div class="image-overlay">
+                <img src="images/fabiana.png" onclick="myFunction(this)">
+                <div class="title">Fabiana Branco</div>
+                <P class="txt">The sister of Marcelo Branco, the head of the Comando Sombra gang and a love interest for Max.</P>
+            </div>
+        </div>
+        <div class="chamber">          
+            <div class="image-overlay">
+                <img src="images/serrano.png" onclick="myFunction(this)">
+                <div class="title">Serrano</div>
+                <P class="txt">The boss of the crime gang Comando Sombra and responsible for kidnapping of Fabiana.</P>
+            </div>
+        </div>
+        <div class="viper">           
+            <div class="image-overlay">
+                <img src="images/marcelo.png" onclick="myFunction(this)">
+                <div class="title">Marcelo Branco</div>
+                <P class="txt">He was the younger child of the Branco family. Described as the stupid party-loving Eurotrash playboy.</P>
+            </div>
+        </div>
+    </div>
+    
+    <div class="img-container">
+        <img id="imageBox" src="images/max payne.png">
+    </div>
+        <script>
+            function myFunction(smallImg)
+            {
+                
+                var fullImg = document.getElementById("imageBox");
+                
+                fullImg.src = smallImg.src;
+            }
+        </script>
+    </div>
+    <script src="vanilla-tilt.min.js"></script>
+      <script>
+        VanillaTilt.init(document.querySelectorAll(".image-overlay"), {
+		      max: 20,
+		      speed: 400
+	      });
+      </script>
+      <script>
+        const images = document.querySelectorAll('.gallery img');
+        const overlay = document.querySelector('.overlay');
+        const overlayImage = document.querySelector('.overlay img');
+        const closeButton = document.querySelector('.close-button');
+  
+        images.forEach(image => {
+          image.addEventListener('click', () => {
+            overlay.style.display = 'block';
+            overlayImage.src = image.src;
+          });
+        });
+  
+        closeButton.addEventListener('click', () => {
+          overlay.style.display = 'none';
+        });
+      </script>
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;   
+}
+.background{
+    background: rgba(0,0,0,0.5)url(bg2.jpg);
+    background-blend-mode: darken ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;   
+}
+.heading{
+    color: tomato;
+    font-family: "Audiowide", sans-serif;
+    font-size: 35px;
+    position: absolute;
+    padding-left: 250px;
+    margin-top: 30px;
+    display: inline;
+    z-index: 2;
+}
+.exp {
+    margin-top: 340px;
+    transform: translateX(500px);
+    padding-left: 22px;
+    margin-left: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 150px;
+    margin-right: 1000px;
+    color: aliceblue;
+    border: solid;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #000;
+}
+.exp a{
+    text-decoration: none;
+    color: white;
+}
+.exp a:hover{
+    color: rgb(196, 36, 15);
+}
+.exp:hover{
+    border-color: tomato;
+}
+samp{
+    color: rgb(196, 36, 15);
+    font-weight: bolder;
+    font-size: 75px;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.container img{
+    
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+}
+.container img{
+    size: -200px;
+}
